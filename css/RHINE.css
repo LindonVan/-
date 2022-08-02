@@ -1,0 +1,50 @@
+html,body{height: 100%;}
+
+body{
+    background-image: url('../source/background.png');
+    background-repeat: repeat-y;
+}
+
+@keyframes DNA1{
+    0%   {background-position: right top;}
+    50%  {background-position: left bottom;}
+    100% {background-position: right top;}
+}
+
+@keyframes DNA2{
+    0%   {background-position: left top;}
+    50%  {background-position: left bottom;}
+    100% {background-position: left top;}
+}
+
+#bgcontainer{
+    height: 100%;
+    width: 93%;
+    z-index: -1;
+}
+
+#bgDNA1{
+    height: 600px;
+    width: 600px;
+    float: left;
+    background-image: url("../source/bgDNA1.png");
+    background-position: right top;
+    background-size: 230%;
+    animation-name: DNA1;
+    animation-duration: 90s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#bgDNA2{
+    height: 100%;
+    width: 200px;
+    float: right;
+    background-image: url("../source/bgDNA2.png");
+    background-position: left top;
+    background-size: 100%;
+    animation-name: DNA2;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
